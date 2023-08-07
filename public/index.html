@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video call app</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- <h1>A simple video call application.</h1> -->
+
+<main>
+  <section class="room-start">
+    <div class="action-area">
+      <div class="profile photo">
+        <img src="https://avatars.githubusercontent.com/u/19647826?v=4" alt="profile photo" width="100"/>
+      </div>
+      <input id="room-name" placeholder="room name"/>
+      <button id="join" class="primary"> start call</button>
+    </div>
+  </section>
+
+  <section class="call-area">
+
+    <div class="stream">
+      <div class="user-video">
+        <video id="user-video" ></video>
+      </div>
+      <div class="peer-video">
+        <video id="peer-video" ></video>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
